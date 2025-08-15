@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: fatec@1234
+      MYSQL_DATABASE: meubanco
+    ports:
+      - "3306:3306"
